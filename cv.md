@@ -22,8 +22,24 @@
 
 ## Code
 ```
-    <div>
+<header id="header" class="fixed-top">
+    <div >
+      <h1><a href="index.html">Restaurantly</a></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#book-a-table">Book a table</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 ```
 
 ## Work experience
@@ -36,3 +52,12 @@
 - analysis of the results of reporting periods, finding ways to reduce operating costs and increase profits.
 - Writing SQL queries for WMS system reports.
 - Building process diagrams (Visio).
+
+## Education
+|Years|University, degree|
+|:---|:---|
+|2012-2017| Belarusian State University of Informatics and Radioelectronics, bachelor's degree in programming and logistics|
+|2017-2019|Belarusian State University of Informatics and Radioelectronics, Master of Economics|
+
+## Language skills
+Knowledge of English (level A2)
