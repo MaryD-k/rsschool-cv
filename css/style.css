@@ -1,0 +1,57 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #2d3a4c;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  h2 {
+    color: #2d3a4c;
+  }
+  
+  h3,
+  h4 {
+    color: #dda01d;
+    letter-spacing: 1.3px;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  /*--Wrapper--*/
+  
+  .wrapper {
+    background-color: #bccfcfb0;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px 20px;
+  }
+  
+  /*--Header--*/
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bccfcf;
+  }
+  
+  .name-surname {
+    color: #2d3a4c;
+  }
+  
