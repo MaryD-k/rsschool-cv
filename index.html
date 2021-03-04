@@ -85,6 +85,31 @@
         </section>
   
         <section class="cv-item">
+          <h2 class="section-title" id="code">Code</h2>
+          <pre class="short-code"><code>            
+  public String searchRecipeByIngr()
+    {
+    if (searchManager == null)
+    { 
+      searchManager = new SearchBeanImpl();
+    }
+    if(selectedKitchen=="" && selectedCategory=="")
+      outRecipes = searchManager.getRecipeByIngrid(ingrName);
+    else if(selectedCategory=="")
+      outRecipes = searchManager.getRecipeByIngrKit(selectedKitchen, ingrName);
+    else if(selectedKitchen=="")
+      outRecipes = searchManager.getRecipeByIngrCat(selectedCategory, ingrName);
+    else
+      outRecipes = searchManager.getRecipeByIngr(selectedCategory, 
+      selectedKitchen, ingrName);
+    selectedCategory = "";
+    selectedKitchen = "";
+    ingrName = "";
+    searchMessage();
+    return "search.xhtml?faces-redirect=true";
+    }
+            </code>
+          </pre>
         </section>
   
         <section class="cv-item">
