@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maria Dyliuk CV</title>
+  </head>
+  <body>
+    <header class="wrapper header">
+      <h1 class="name-surname">Maria Dyliuk</h1>
+      <nav class="nav">
+        <ul>
+          <li class="nav-point">
+            <a class="nav-link" href="#work-experience">Work experience</a>
+          </li>
+          <li class="nav-point">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-point">
+            <a class="nav-link" href="#language-skills">Language skills</a>
+          </li>
+          <li class="nav-point">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+      <main class="wrapper main">
+        <section class="main-section">
+          <img src="images/photo.jpg" alt="Maria Dyliuk" />
+          <div class="main-info">
+            <h3>Objectives</h3>
+            <p>
+              I want to be a part of front-end development team. I don't have an
+              experience, but I possess great desire to work, constantly develop
+              and learn something new. I am good at establishing rapport with
+              different people. Stress tolerance, highly organized and
+              detail-oriented help in solving any tasks assigned to me.
+            </p>
+          </div>
+          <div class="main-info">
+            <ul class="info-points">
+              <li class="point">
+                <h3>Address:</h3>
+                Minsk, Belarus
+              </li>
+              <li class="point">
+                <h3>Phone number:</h3>
+                +375-29-703-22-67
+              </li>
+              <li class="point">
+                <h3>Date of birth:</h3>
+                17 th of July 1995
+              </li>
+              <li class="point">
+                <h3>Marital status:</h3>
+                married
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-item">
+          <h2 class="section-title" id="skills">Skills</h2>
+          <h4>Language</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>Java</li>
+          </ul>
+          <h4>Storage</h4>
+          <ul>
+            <li>MySQL</li>
+            <li>Git</li>
+          </ul>
+        </section>
+  
+        <section class="cv-item">
+          <h2 class="section-title" id="code">Code</h2>
+          <pre class="short-code"><code>            
+  public String searchRecipeByIngr()
+    {
+    if (searchManager == null)
+    { 
+      searchManager = new SearchBeanImpl();
+    }
+    if(selectedKitchen=="" && selectedCategory=="")
+      outRecipes = searchManager.getRecipeByIngrid(ingrName);
+    else if(selectedCategory=="")
+      outRecipes = searchManager.getRecipeByIngrKit(selectedKitchen, ingrName);
+    else if(selectedKitchen=="")
+      outRecipes = searchManager.getRecipeByIngrCat(selectedCategory, ingrName);
+    else
+      outRecipes = searchManager.getRecipeByIngr(selectedCategory, 
+      selectedKitchen, ingrName);
+    selectedCategory = "";
+    selectedKitchen = "";
+    ingrName = "";
+    searchMessage();
+    return "search.xhtml?faces-redirect=true";
+    }
+            </code>
+          </pre>
+        </section>
+  
+        <section class="cv-item">
+          <h2 class="section-title" id="work-experience">Work experience</h2>
+          <h4 class="text-style">ОДО "ТУТ и ТАМ Логистикс", 2016-present</h4>
+          <h4 class="text-style">Analyst</h4>
+          <ul>
+            <li>
+              monitoring the performance of operating units, identifying the
+              determining factors that affect the KPI;
+            </li>
+            <li>
+              calculation of indicators of the level of quality of delivery
+              service, analysis and search for methods to improve them;
+            </li>
+            <li>
+              control of the duration and quality of picking pre-orders for
+              shipment in the WMS system;
+            </li>
+            <li>
+              analysis of the results of reporting periods, finding ways to reduce
+              operating costs and increase profits.
+            </li>
+            <li>writing SQL queries for WMS system reports.</li>
+            <li>building process diagrams (Visio).</li>
+          </ul>
+        </section>
+  
+        <section class="cv-item">
+          <h2 class="section-title" id="education">Education</h2>
+          <h4>2017-2019</h4>
+          <div class="education-info">
+            Belarusian State University of Informatics and Radioelectronics,
+            Master of Economics
+          </div>
+          <h4>2012-2017</h4>
+          <div class="education-info">
+            Belarusian State University of Informatics and Radioelectronics,
+            bachelor's degree in programming and logistics
+          </div>
+        </section>
+  
+        <section class="cv-item">
+          <h2 class="section-title" id="language-skills">Language skills</h2>
+          <p>Knowledge of English (level A2)</p>
+        </section>
+      </main>
+  
+      <footer class="wrapper footer">
+        <div id="contacts"><h3>Contacts:</h3></div>
+        <div class="github">
+          <a class="github-link" href="https://github.com/MaryD-k">Github</a>
+        </div>
+        <ul class="contact-panel">
+          <li class="contact-icon skype-icon">
+            <a class="skype" href="skype:live:mary.basik">sk</a>
+          </li>
+          <li class="contact-icon telegram-icon">
+            <a class="telegram" href="tel:+375297032267">t g</a>
+          </li>
+          <li class="contact-icon gmail-icon">
+            <a class="gmail" href="mailto:mary.basik@gmail.com">ml</a>
+          </li>
+          <li class="contact-icon RSS-icon">
+            <a class="RSS" href="https://rs.school/js/">RS</a>
+          </li>
+        </ul>
+        <div class="year">2021y.</div>
+      </footer>
+  </body>
+</html>
