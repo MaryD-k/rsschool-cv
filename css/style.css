@@ -158,3 +158,32 @@ h4 {
 .education-info {
   margin: 10px;
 }
+
+/*--Footer--*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #bccfcf;
+}
+
+#contacts,
+.github,
+.year {
+  display: inline-flex;
+  align-items: center;
+}
+
+.github-link {
+  color: #626c74;
+}
+
+.contact-panel {
+  margin: 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
