@@ -199,12 +199,13 @@ h4 {
 .telegram,
 .skype,
 .gmail,
-.frontend {
+.RSS {
   opacity: 0;
-  font-size: 15px;
+
+  font-size: 50px;
 }
 
-.frontend-icon {
+.RSS-icon {
   background: url(../svg/rs_school_js.svg) center no-repeat;
 }
 
