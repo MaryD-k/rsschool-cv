@@ -187,3 +187,35 @@ h4 {
   justify-content: space-between;
   padding: 0;
 }
+
+.contact-icon {
+  padding: 0;
+  list-style-type: none;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.telegram,
+.skype,
+.gmail,
+.frontend {
+  opacity: 0;
+  font-size: 15px;
+}
+
+.frontend-icon {
+  background: url(../svg/rs_school_js.svg) center no-repeat;
+}
+
+.telegram-icon {
+  background: url(../svg/telegram.svg) center no-repeat;
+}
+
+.skype-icon {
+  background: url(../svg/skype.svg) center no-repeat;
+}
+
+.gmail-icon {
+  background: url(../svg/gmail.svg) center no-repeat;
+}
